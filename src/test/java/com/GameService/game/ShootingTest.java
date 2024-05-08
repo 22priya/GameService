@@ -55,6 +55,5 @@ public class ShootingTest {
             throw new RuntimeException(e);
         }
         assertEquals(true,shootingGame.isGameFinished);
-        //assertEquals(2,shootingGame.ge);
     }
 }

@@ -54,4 +54,13 @@ public class Score {
                 ", score=" + score +
                 '}';
     }
+
+
+    public Shooting getShooting() {
+        return shooting;
+    }
+
+    public void setShooting(Shooting shooting) {
+        this.shooting = shooting;
+    }
 }

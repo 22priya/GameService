@@ -1,9 +1,7 @@
 package com.GameService.player;
 
-import com.GameService.score.Score;
 import jakarta.persistence.*;
 
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -24,6 +22,9 @@ public class Player{
         this.name = name;
         this.age = age;
         this.email = email;
+    }
+
+    public Player() {
     }
 
     @Override

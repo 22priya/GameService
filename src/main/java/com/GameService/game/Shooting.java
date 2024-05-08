@@ -27,6 +27,9 @@ public class Shooting implements Game {
     @ManyToMany
     private List<Player> players;
 
+    public Shooting() {
+    }
+
     public Boolean getGameFinished() {
         return isGameFinished;
     }
@@ -111,5 +114,37 @@ public class Shooting implements Game {
         return "Shooting{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<GameObserver> getGameObserverList() {
+        return gameObserverList;
+    }
+
+    public void setGameObserverList(List<GameObserver> gameObserverList) {
+        this.gameObserverList = gameObserverList;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
     }
 }
